@@ -1,0 +1,98 @@
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom right, #ffa500, #ffcc70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 90%;
+    max-width: 450px;
+    padding: 2rem;
+    border-radius: 20px;
+    background-color: white;
+}
+
+/* タイトル */
+.title {
+    color: #ff6f00;
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* ルーム作成ボタン */
+.create-room-btn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.create-room-btn:hover {
+    background-color: #fb8c00;
+}
+
+/* ルーム検索フォーム */
+.search-form {
+    display: flex;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.search-form .input-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-form input {
+    width: 100%;
+    padding: 0.75rem 3rem 0.75rem 1rem;
+    /* 右にボタン用の余白 */
+    font-size: 1rem;
+    border: 2px solid #ff9800;
+    border-radius: 9999px;
+    /* 丸み */
+    box-sizing: border-box;
+}
+
+.search-form input:focus {
+    outline: none;
+    border: 2px solid #e86c00;
+    /* より濃いオレンジ */
+    box-shadow: 0 0 0 2px rgba(255, 152, 0, 0.3);
+}
+
+.search-form button {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background-color: #ff9800;
+    border: none;
+    color: white;
+    font-weight: bold;
+    width: 2.0rem;
+    height: 2.0rem;
+    border-radius: 50%;
+    /* 丸くする */
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.2s ease;
+}
+
+.search-form button:hover {
+    background-color: #fb8c00;
+}
